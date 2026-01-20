@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalhiya Builders & Constructions</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Kalhiya Builders & Constructions - Trusted building, civil works, renovation, and interior/exterior services in Delhi, Gurugram, Noida, Ghaziabad.">
-    <meta name="keywords" content="Kalhiya Builders, Construction, Civil Works, Renovation, Interior, Exterior, Delhi, Gurugram, Noida, Ghaziabad">
-    <meta name="author" content="Kalhiya Builders & Constructions">
-    <meta name="google-site-verification" content="googlede1c1a2d31793293" />
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/kalhiya-builders/kalhiya-builders.github.io/main/favicon.ico" type="image/x-icon">
 
-    <style>
+    <!-- SEO Meta Tags -->
+<meta name="description" content="Kalhiya Builders & Constructions - Trusted building, civil works, renovation, and interior/exterior services in Delhi, Gurugram, Noida, Ghaziabad.">
+<meta name="keywords" content="Kalhiya Builders, Construction, Civil Works, Renovation, Interior, Exterior, Delhi, Gurugram, Noida, Ghaziabad">
+<meta name="author" content="Kalhiya Builders & Constructions">
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="AbCdEf123456" />
+
+<style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -62,10 +67,43 @@
         }
         .projects p {
             max-width: 700px;
+            margin: auto;
+        }
+        .contact-info p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            background: #1f2937;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.95rem;
+        }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: #fff;
+            padding: 14px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .whatsapp:hover {
+            background: #1ebe5d;
         }
     </style>
 </head>
-
 <body>
 
 <header>
@@ -73,7 +111,36 @@
     <p>Quality Construction You Can Trust</p>
 </header>
 
-<!-- Baaki content jaise about, services, projects, contact -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        Kalhiya Builders & Constructions is a trusted name in the construction industry,
+        delivering quality building solutions with commitment and professionalism.
+        We undertake residential and commercial projects with a strong focus on
+        durability, safety, and timely completion.
+    </p>
+    <p><strong>Service Areas:</strong> Delhi, Gurugram, Noida, Ghaziabad</p>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="services-box">
+        <div class="service">🏗️ Building Construction</div>
+        <div class="service">🧱 Civil Works</div>
+        <div class="service">🔧 Renovation</div>
+        <div class="service">🎨 Interior & Exterior</div>
+    </div>
+</section>
+
+<section class="projects">
+    <h2>Projects & Work</h2>
+    <p>
+        We have successfully completed multiple construction and renovation projects.
+        Our work videos and site progress recordings showcase our quality workmanship
+        and on-site execution.
+    </p>
+    <p><em>Project gallery & videos can be added here.</em></p>
+</section>
 
 <section class="contact">
     <h2>Contact Us</h2>
@@ -96,16 +163,23 @@
     </p>
 </section>
 
-<!-- -------------------------- -->
-<!-- SCROLL TO TOP SCRIPT -->
+<footer>
+    © 2026 Kalhiya Builders & Constructions. All Rights Reserved.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918920121265" target="_blank">
+   💬 WhatsApp
+</a>
+
 <script>
-  window.addEventListener("load", function() {
+  window.onload = function () {
     if (window.location.hash) {
       window.scrollTo(0, 0);
-      history.replaceState(null, null, window.location.pathname + window.location.search);
+      history.replaceState(null, null, window.location.pathname);
     }
-  });
+  };
 </script>
 
 </body>
 </html>
+
