@@ -167,12 +167,18 @@
     © 2026 Kalhiya Builders & Constructions. All Rights Reserved.
 </footer>
 
-<a class="whatsapp" 
-   href="https://wa.me/918920121265" 
-   target="_blank">
+<a class="whatsapp" href="https://wa.me/918920121265" target="_blank">
    💬 WhatsApp
 </a>
 
+<script>
+  window.onload = function () {
+    if (window.location.hash) {
+      window.scrollTo(0, 0);
+      history.replaceState(null, null, window.location.pathname);
+    }
+  };
+</script>
+
 </body>
 </html>
-
