@@ -122,7 +122,7 @@ footer {
 }
 
 /* ----------------------------
-   WHATSAPP FLOATING ICON
+   WHATSAPP FLOATING ICON (PULSE)
 ---------------------------- */
 .whatsapp {
     position: fixed;
@@ -130,14 +130,20 @@ footer {
     right: 20px;
     width: 60px;
     height: 60px;
-    background: #25d366;
+
+    /* Theme-friendly green (light brown header ke saath match) */
+    background: #1fa855;
+
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+
+    box-shadow: 0 0 0 rgba(31,168,85, 0.6);
+    animation: whatsapp-pulse 2s infinite;
+
     z-index: 1000;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .whatsapp img {
@@ -145,7 +151,20 @@ footer {
     height: 32px;
 }
 
+/* Hover effect */
 .whatsapp:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    transform: scale(1.15);
+}
+
+/* Pulse animation */
+@keyframes whatsapp-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(31,168,85, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 18px rgba(31,168,85, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(31,168,85, 0);
+    }
 }
