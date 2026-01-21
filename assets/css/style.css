@@ -1,16 +1,14 @@
-/* ---------------------- */
-/* LOGO STYLING + ANIMATION */
-/* ---------------------- */
+/* LOGO BADA + ANIMATION */
 header img.logo {
-    height: 120px;           /* logo size */
+    height: 120px;            /* Logo ko bada kar diya */
     display: block;
-    margin: 0 auto 15px;     /* center align */
-    transition: transform 0.5s ease; /* smooth hover animation */
+    margin: 0 auto 15px;      /* Center align */
+    transition: transform 0.5s ease; /* Hover smooth animation */
 }
 
 /* Hover effect */
 header img.logo:hover {
-    transform: scale(1.1);  /* thoda bada ho jaye hover par */
+    transform: scale(1.1);    /* Thoda zoom on hover */
 }
 
 /* Page load animation */
@@ -21,70 +19,4 @@ header img.logo:hover {
 
 header img.logo {
     animation: logoAppear 1s ease forwards;
-}
-
-/* ---------------------- */
-/* BASIC BODY & HEADER STYLING */
-/* ---------------------- */
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-header {
-    background: #1f2937;
-    color: #fff;
-    padding: 25px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-}
-
-header p {
-    margin-top: 8px;
-    font-size: 1.1rem;
-    color: #d1d5db;
-}
-
-/* Sections */
-section {
-    padding: 50px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #1f2937;
-}
-
-.about, .services, .contact {
-    text-align: center;
-}
-
-.services-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.service {
-    background: #f3f4f6;
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.projects {
-    text-align: center;
-}
-
-.projects p {
-    max-width: 700px;
 }
