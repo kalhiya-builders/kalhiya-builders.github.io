@@ -122,22 +122,30 @@ footer {
 }
 
 /* ----------------------------
-   WHATSAPP BUTTON
+   WHATSAPP FLOATING ICON
 ---------------------------- */
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    width: 60px;
+    height: 60px;
     background: #25d366;
-    color: #fff;
-    padding: 14px 18px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: background 0.3s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp img {
+    width: 32px;
+    height: 32px;
 }
 
 .whatsapp:hover {
-    background: #1ebe5d;
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
 }
