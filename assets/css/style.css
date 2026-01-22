@@ -20,13 +20,18 @@ header {
 
 header h1 {
     margin: 10px 0 0 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem; /* thoda bada aur prominent */
+    font-family: 'Montserrat', sans-serif; /* Google font */
+    font-weight: 900; /* extra bold */
+    text-transform: uppercase; /* capital letters */
+    letter-spacing: 1.5px; /* thodi spacing for premium look */
+    color: #3d2b1f; /* dark brown, theme match */
 }
 
 header p {
     margin-top: 8px;
     font-size: 1.1rem;
-    color: #3d2b1f;
+    color: #3d2b1f; /* tagline color same theme */
 }
 
 /* Logo styling with animation */
