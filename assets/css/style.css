@@ -232,3 +232,28 @@ footer {
     font-size: 1.05rem;
     color: #1f2937;
 }
+/* ----------------------------
+   BACKGROUND CONSTRUCTION ANIMATION
+---------------------------- */
+.bg-animation {
+    position: fixed;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(210, 180, 140, 0.08),
+        rgba(210, 180, 140, 0.08) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    z-index: -1;
+    animation: moveBg 30s linear infinite;
+}
+
+@keyframes moveBg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 400px 400px;
+    }
+}
