@@ -12,12 +12,11 @@ body {
    HEADER & LOGO
 ---------------------------- */
 header {
-    background: #f3f4f6; /* light gray */
-    color: #1f2937;      /* text color dark for contrast */
+    background: #2c2c2c; /* dark gray / almost charcoal */
+    color: #fff;         /* text white for contrast */
     padding: 30px 20px;
     text-align: center;
 }
-
 
 header h1 {
     margin: 10px 0 0 0;
