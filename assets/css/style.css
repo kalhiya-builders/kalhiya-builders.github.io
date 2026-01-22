@@ -12,12 +12,11 @@ body {
    HEADER & LOGO
 ---------------------------- */
 header {
-    background: #2c2c2c; /* dark gray / almost charcoal */
-    color: #fff;         /* text white for contrast */
+    background: #ff6600; /* Safety Orange */
+    color: #fff;
     padding: 30px 20px;
     text-align: center;
 }
-
 header h1 {
     margin: 10px 0 0 0;
     font-size: 2.8rem; /* thoda bada aur prominent */
