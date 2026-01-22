@@ -190,3 +190,45 @@ footer {
         transform: translateY(0);
     }
 }
+/* ----------------------------
+   PROJECT VIDEOS GRID
+---------------------------- */
+.projects {
+    text-align: center;
+}
+
+.projects-sub {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.video-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+}
+
+.video-card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    margin-top: 12px;
+    font-size: 1.05rem;
+    color: #1f2937;
+}
