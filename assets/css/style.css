@@ -283,3 +283,47 @@ footer {
     0% { background-position: 0 0; }
     100% { background-position: 600px 600px; }
 }
+/* ----------------------------
+   WHATSAPP BUTTON
+---------------------------- */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
+}
+
+/* ----------------------------
+   TAGLINE ANIMATION
+---------------------------- */
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffd700; /* subtle gold for contrast on dark header */
+    margin-top: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Capital letters */
+
+    opacity: 0;
+    transform: translateY(15px);
+    animation: taglineFadeUp 1.6s ease-out forwards;
+    animation-delay: 1.2s; /* logo ke baad */
+}
+
+@keyframes taglineFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
