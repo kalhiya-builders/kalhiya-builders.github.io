@@ -39,11 +39,19 @@ header p {
 
 /* Logo styling with animation */
 .logo {
-    height: 150px;   /* pehle 120px tha, ab bada */
+    height: 300px; /* desktop ke liye bada logo */
     display: block;
     margin: 0 auto 18px auto;
     animation: bounce 2.2s infinite;
 }
+
+/* Mobile responsive logo */
+@media (max-width: 768px) {
+    .logo {
+        height: 180px; /* mobile/tablet pe chhota */
+    }
+}
+
 /* Logo bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
