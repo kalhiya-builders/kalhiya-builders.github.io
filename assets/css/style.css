@@ -406,7 +406,7 @@ header h1 {
     margin-bottom: 6px;
 }
 /* ----------------------------
-   WHATSAPP FLOATING ICON (Akshay style)
+   WHATSAPP FLOATING ICON
 ---------------------------- */
 .whatsapp {
     position: fixed;
@@ -414,42 +414,39 @@ header h1 {
     right: 18px;
     width: 52px;
     height: 52px;
-    background: #2bb673; /* soft WhatsApp green */
+    background: #25d366;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 14px rgba(0,0,0,0.35);
-    z-index: 9999;
-    animation: whatsappPulse 1.8s infinite;
+    z-index: 999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* WhatsApp image size */
 .whatsapp img {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
 }
 
-/* Pulse animation */
-@keyframes whatsappPulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(43,182,115,0.6);
-    }
-    70% {
-        box-shadow: 0 0 0 15px rgba(43,182,115,0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(43,182,115,0);
-    }
+/* Hover animation */
+.whatsapp:hover {
+    transform: scale(1.12);
+    box-shadow: 0 10px 22px rgba(37, 211, 102, 0.7);
 }
 
-/* Mobile size */
+/* Mobile thoda chhota */
 @media (max-width: 768px) {
     .whatsapp {
         width: 46px;
         height: 46px;
+        bottom: 15px;
+        right: 15px;
     }
+
     .whatsapp img {
-        width: 24px;
-        height: 24px;
+        width: 23px;
+        height: 23px;
     }
 }
