@@ -450,3 +450,94 @@ header h1 {
         height: 23px;
     }
 }
+/* ----------------------------
+   CLIENT REVIEWS SECTION
+---------------------------- */
+.reviews {
+    padding: 60px 20px;
+    background: #f7f7fb; /* soft light background */
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.reviews h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* Review cards */
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.review-text {
+    font-style: italic;
+    color: #444;
+}
+
+.review-name {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #5b4b8a;
+}
+
+/* Review form */
+.review-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.review-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.review-form button {
+    background: #5b4b8a;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.review-form button:hover {
+    background: #46376d;
+}
+.whatsapp img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
