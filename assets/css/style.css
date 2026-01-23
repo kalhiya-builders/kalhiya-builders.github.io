@@ -8,24 +8,23 @@ body {
     color: #333;
     background-color: #e5e7eb; /* Warm Concrete Grey */
 }
-
 /* ----------------------------
    HEADER & LOGO
 ---------------------------- */
 header {
-    background: #ff6600; /* Safety Orange */
-    color: #fff;
+    background: #e8eef3; /* Soft Steel Blue */
+    color: #111;
     padding: 30px 20px;
     text-align: center;
 }
 header h1 {
-    margin: 10px 0 0 0;
-    font-size: 2.8rem; /* thoda bada aur prominent */
-    font-family: 'Montserrat', sans-serif; /* Google font */
-    font-weight: 900; /* extra bold */
-    text-transform: uppercase; /* capital letters */
-    letter-spacing: 1.5px; /* thodi spacing for premium look */
-    color: #3d2b1f; /* dark brown, theme match */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.6rem;
+    margin: 12px 0 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1f2937;
 }
 
 header p {
@@ -36,10 +35,10 @@ header p {
 
 /* Logo styling with animation */
 .logo {
-    height: 160px;   /* pehle 120px tha */
+    height: 140px; /* thoda bada */
     display: block;
-    margin: 0 auto 20px auto;
-    animation: bounce 2s infinite;
+    margin: 0 auto 18px;
+    animation: bounce 2.5s infinite;
 }
 /* Logo bounce animation */
 @keyframes bounce {
@@ -176,16 +175,17 @@ footer {
    TAGLINE ANIMATION
 ---------------------------- */
 .tagline {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #3d2b1f; /* brown shade – theme match */
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #374151; /* dark slate */
     margin-top: 8px;
-    letter-spacing: 0.6px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 
     opacity: 0;
     transform: translateY(15px);
     animation: taglineFadeUp 1.6s ease-out forwards;
-    animation-delay: 1.2s; /* logo ke baad aaye */
+    animation-delay: 1.2s;
 }
 
 @keyframes taglineFadeUp {
