@@ -164,27 +164,36 @@ const reviewForm = document.getElementById("reviewForm");
 
 if (reviewForm) {
   reviewForm.addEventListener("submit", function(e) {
-      e.preventDefault();
+    e.preventDefault();
 
-      const name = document.getElementById("name").value;
-      const review = document.getElementById("review").value;
+    const name = document.getElementById("name").value;
+    const review = document.getElementById("review").value;
+    const rating = document.querySelector('input[name="rating"]:checked');
 
-      const reviewCard = document.createElement("div");
-      reviewCard.classList.add("review-card");
+    if (!rating) {
+      alert("Please select star rating ⭐");
+      return;
+    }
 
-      reviewCard.innerHTML = `
-          <p class="review-text">“${review}”</p>
-          <p class="review-name">— ${name}</p>
-      `;
+    const stars = "★".repeat(rating.value);
 
-      document.getElementById("reviewList").appendChild(reviewCard);
-      this.reset();
+    const reviewCard = document.createElement("div");
+    reviewCard.classList.add("review-card");
+
+    reviewCard.innerHTML = `
+      <div class="review-stars">${stars}</div>
+      <p class="review-text">“${review}”</p>
+      <p class="review-name">— ${name}</p>
+    `;
+
+    document.getElementById("reviewList").appendChild(reviewCard);
+    this.reset();
   });
 }
 </script>
-
 </body>
 </html>
+
 
 
 
