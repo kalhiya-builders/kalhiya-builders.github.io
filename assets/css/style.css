@@ -350,3 +350,28 @@ footer {
 .whatsapp:hover {
     background: #1ebe5d;
 }
+/* ----------------------------
+   PROJECT VIDEOS – CARD STYLE
+---------------------------- */
+.project-videos video {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+
+    border: 2px solid #3f3f3f; /* subtle border */
+    background: #000;
+
+    box-shadow: 
+        0 8px 20px rgba(0,0,0,0.6),   /* main shadow */
+        0 0 0 1px rgba(255,255,255,0.05); /* soft outline */
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project-videos video:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 14px 30px rgba(0,0,0,0.75),
+        0 0 0 1px rgba(255,255,255,0.08);
+}
