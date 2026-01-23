@@ -36,12 +36,11 @@ header p {
 
 /* Logo styling with animation */
 .logo {
-    height: 120px; /* bada logo */
+    height: 160px;   /* pehle 120px tha */
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 20px auto;
     animation: bounce 2s infinite;
 }
-
 /* Logo bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
