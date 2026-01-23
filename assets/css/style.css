@@ -585,3 +585,39 @@ header h1 {
     font-size: 1.2rem;
     margin-bottom: 6px;
 }
+/* ⭐ STAR RATING HOVER ANIMATION */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* Hover effect */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f4c430;
+    transform: scale(1.2);
+}
+
+/* Selected stars stay gold */
+.star-rating input:checked ~ label {
+    color: #f4c430;
+}
+
+/* Soft bounce on click */
+.star-rating label:active {
+    transform: scale(1.35);
+}
