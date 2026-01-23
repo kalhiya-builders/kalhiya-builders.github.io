@@ -5,9 +5,10 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #e5e7eb;              /* light text on dark bg */
-    background: #2b2b2b;         /* charcoal grey */
+    color: #333;
+    background-color: #e5e7eb; /* Warm Concrete Grey */
 }
+
 /* ----------------------------
    HEADER & LOGO
 ---------------------------- */
@@ -235,49 +236,6 @@ footer {
     margin-top: 12px;
     font-size: 1.05rem;
     color: #1f2937;
-}
-/* ----------------------------
-   BACKGROUND CONSTRUCTION ANIMATION
----------------------------- */
-.bg-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* content ke peeche rahe */
-    background-color: #2f2f2f; /* charcoal grey */
-    /* animation aur grid pattern hata diya */
-    opacity: 1; /* full color, subtle nahi */
-}
-@keyframes moveBg {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 400px 400px;
-    }
-}
-/* ----------------------------
-   BACKGROUND ANIMATION
----------------------------- */
-.bg-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* content ke peeche rahe */
-    background: linear-gradient(135deg, #f3e5ab 25%, #d2b48c 25%, #d2b48c 50%, #f3e5ab 50%, #f3e5ab 75%, #d2b48c 75%, #d2b48c 100%);
-    background-size: 60px 60px; /* grid pattern size */
-    animation: moveBg 20s linear infinite;
-    opacity: 0.2; /* subtle */
-}
-
-/* Slowly move the background diagonally */
-@keyframes moveBg {
-    0% { background-position: 0 0; }
-    100% { background-position: 600px 600px; }
 }
 /* ----------------------------
    WHATSAPP BUTTON
