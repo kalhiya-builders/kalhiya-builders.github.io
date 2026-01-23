@@ -39,10 +39,10 @@ header p {
 
 /* Logo styling with animation */
 .logo {
-    height: 140px; /* thoda bada */
+    height: 150px;   /* pehle 120px tha, ab bada */
     display: block;
-    margin: 0 auto 18px;
-    animation: bounce 2.5s infinite;
+    margin: 0 auto 18px auto;
+    animation: bounce 2.2s infinite;
 }
 /* Logo bounce animation */
 @keyframes bounce {
@@ -343,4 +343,32 @@ header h1 {
 
 .tagline {
     color: #5b4b8a; /* purple-brown mix */
+}
+/* ----------------------------
+   TAGLINE CONTINUOUS ANIMATION
+---------------------------- */
+.tagline {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #5b4b8a; /* light purple */
+    margin-top: 8px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    animation: taglinePulse 3s ease-in-out infinite;
+}
+
+@keyframes taglinePulse {
+    0% {
+        opacity: 0.6;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-4px);
+    }
+    100% {
+        opacity: 0.6;
+        transform: translateY(0);
+    }
 }
