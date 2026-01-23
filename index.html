@@ -78,6 +78,27 @@
         </video>
     </div>
 </section>
+<section class="reviews">
+    <h2>Client Reviews</h2>
+
+    <div class="review-list" id="reviewList">
+        <!-- Sample Review -->
+        <div class="review-card">
+            <p class="review-text">
+                “Kalhiya Builders ne kaam time par aur bahut achhi quality ke saath complete kiya.”
+            </p>
+            <p class="review-name">— Ramesh Kumar, NFC</p>
+        </div>
+    </div>
+
+    <h3>Submit Your Review</h3>
+
+    <form class="review-form" id="reviewForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="review" placeholder="Your Review" required></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+</section>
 
 <section class="contact">
     <h2>Contact Us</h2>
@@ -127,9 +148,33 @@
     }
   };
 </script>
+<script>
+const reviewForm = document.getElementById("reviewForm");
+
+if (reviewForm) {
+  reviewForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const review = document.getElementById("review").value;
+
+      const reviewCard = document.createElement("div");
+      reviewCard.classList.add("review-card");
+
+      reviewCard.innerHTML = `
+          <p class="review-text">“${review}”</p>
+          <p class="review-name">— ${name}</p>
+      `;
+
+      document.getElementById("reviewList").appendChild(reviewCard);
+      this.reset();
+  });
+}
+</script>
 
 </body>
 </html>
+
 
 
 
