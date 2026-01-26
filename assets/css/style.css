@@ -650,45 +650,39 @@ header h1 {
     transform: scale(1.1);
     box-shadow: 0 6px 16px rgba(0,0,0,0.35);
 }
-/* WhatsApp floating icon – Blue style (Akshay Online Solutions type) */
 .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 48px;   /* Instagram ke barabar */
-    height: 48px;
-    background: #1e88e5; /* Blue */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 16px rgba(30,136,229,0.45);
-    z-index: 999;
-    animation: pulseBlue 2s infinite;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  width: 56px;
+  height: 56px;
+
+  background: #1fa8ff; /* Blue like Akshay Online Solutions */
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+  animation: pulse 1.8s infinite;
 }
 
-/* Icon image size */
 .whatsapp img {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1); /* icon pure white */
-}
+  width: 28px;
+  height: 28px;
 
-/* Hover effect */
-.whatsapp:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 22px rgba(30,136,229,0.65);
+  filter: brightness(0) invert(1); /* 🔥 makes logo PURE WHITE */
 }
-
-/* Pulse animation */
-@keyframes pulseBlue {
-    0% {
-        box-shadow: 0 0 0 0 rgba(30,136,229,0.6);
-    }
-    70% {
-        box-shadow: 0 0 0 18px rgba(30,136,229,0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(30,136,229,0);
-    }
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(31,168,255,0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(31,168,255,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(31,168,255,0);
+  }
 }
