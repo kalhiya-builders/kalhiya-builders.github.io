@@ -673,8 +673,7 @@ header h1 {
   60% { transform: translateX(-3px); }
   80% { transform: translateX(3px); }
   100% { transform: translateX(0); }
-}
-.hero{
+}.hero{
 height:500px;
 
 background-image:url("../images/engineer-site.jpg");
@@ -682,14 +681,14 @@ background-size:cover;
 background-position:center;
 
 display:flex;
-align-items:center;
-justify-content:flex-end;
+align-items:flex-start;      /* text ऊपर रहेगा */
+justify-content:flex-end;    /* right side */
 
-padding-right:60px;
+padding:40px 60px 0 0;       /* top-right spacing */
 }
 
 .hero-text{
-color:#333333;
+color:white;
 max-width:520px;
 text-align:right;
 }
@@ -697,11 +696,12 @@ text-align:right;
 .hero-text h2{
 font-size:42px;
 font-weight:800;
-color:#0B3D91;
+color:white;
 }
 
 .hero-text p{
-color:#333333;
+color:white;
+font-weight:bold;
 }
 
 .hero-btn{
