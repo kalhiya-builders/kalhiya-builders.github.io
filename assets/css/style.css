@@ -689,7 +689,7 @@ padding-right:60px;
 }
 
 .hero-text{
-color:white;
+color:#333333;
 max-width:520px;
 text-align:right;
 }
@@ -697,15 +697,19 @@ text-align:right;
 .hero-text h2{
 font-size:42px;
 font-weight:800;
-color:white;
+color:#0B3D91;
+}
+
+.hero-text p{
+color:#333333;
 }
 
 .hero-btn{
 display:inline-block;
 margin-top:20px;
-padding:12px 22px;
+padding:12px 25px;
 
-background:#ff9f1a;
+background:#FF6600;
 color:white;
 text-decoration:none;
 border-radius:5px;
