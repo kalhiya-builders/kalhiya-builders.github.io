@@ -131,37 +131,59 @@ durability, safety, and timely completion.
 <img src="assets/images/d1-34-stilt-shuttering.jpeg" width="300" alt="Stilt Shuttering Work">
 <img src="assets/images/d1-35-structure-with-brick-works.jpeg" width="300" alt="Structure with Brick Works">
 
-</section>
 <section class="services">
 
-<h2>Our Services</h2>
+  <h2>Our Services</h2>
 
-<div class="service-grid">
+  <div class="service-grid">
 
-<div class="service-box">
-<h3>Building Construction</h3>
-<p>Residential and commercial building construction with high quality materials.</p>
-</div>
+    <div class="service-box">
+      <h3>Building Construction</h3>
+      <button onclick="toggleDetails('buildingDetails')">Show/Hide Details</button>
+      <div id="buildingDetails" style="display:none;">
+        Residential and commercial building construction with high quality materials.
+      </div>
+    </div>
 
-<div class="service-box">
-<h3>Structural Work</h3>
-<p>Strong foundation, shuttering, slab casting and steel structure work.</p>
-</div>
+    <div class="service-box">
+      <h3>Structural Work</h3>
+      <button onclick="toggleDetails('structuralDetails')">Show/Hide Details</button>
+      <div id="structuralDetails" style="display:none;">
+        Strong foundation, shuttering, slab casting and steel structure work.
+      </div>
+    </div>
 
-<div class="service-box">
-<h3>Renovation</h3>
-<p>Complete renovation and remodeling services for homes and offices.</p>
-</div>
+    <div class="service-box">
+      <h3>Renovation</h3>
+      <button onclick="toggleDetails('renovationDetails')">Show/Hide Details</button>
+      <div id="renovationDetails" style="display:none;">
+        Complete renovation and remodeling services for homes and offices.
+      </div>
+    </div>
 
-<div class="service-box">
-<h3>Project Management</h3>
-<p>End-to-end project planning and construction supervision.</p>
-</div>
+    <div class="service-box">
+      <h3>Project Management</h3>
+      <button onclick="toggleDetails('projectDetails')">Show/Hide Details</button>
+      <div id="projectDetails" style="display:none;">
+        End-to-end project planning and construction supervision.
+      </div>
+    </div>
 
-</div>
+  </div>
 
 </section>
-<section class="projects">
+
+<!-- Script at the end of body -->
+<script>
+  function toggleDetails(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
 
 <h2>Project Videos</h2>
 
