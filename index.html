@@ -44,6 +44,28 @@
     <h1>Kalhiya Builders & Constructions</h1>
 
     <p class="tagline">QUALITY CONSTRUCTION YOU CAN TRUST</p>
+
+    <div class="slider">
+        <img class="slide" src="assets/images/slide1.jpg">
+        <img class="slide" src="assets/images/slide2.jpg">
+        <img class="slide" src="assets/images/slide3.jpg">
+    </div>
+</header>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide() {
+  slides.forEach((slide, i) => {
+    slide.style.display = (i === index) ? "block" : "none";
+  });
+  index = (index + 1) % slides.length;
+}
+
+showSlide();
+setInterval(showSlide, 3000);
+</script>
 </header>
 <section class="hero">
 
