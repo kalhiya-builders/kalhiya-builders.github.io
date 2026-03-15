@@ -1,399 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalhiya Builders & Constructions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Company</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="https://raw.githubusercontent.com/kalhiya-builders/kalhiya-builders.github.io/main/favicon.ico" type="image/x-icon">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Kalhiya Builders & Constructions ...">
-    <meta name="keywords" content="Kalhiya Builders, Construction, Civil Works,...">
-    <meta name="author" content="Kalhiya Builders & Constructions">
+  <style>
+    /* Basic styling for services section */
+    .services {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+    }
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="AbCdEf123456" />
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      color: #333;
+    }
 
-    <!-- LINK TO GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
-    <!-- LINK TO EXTERNAL CSS FOR LOGO ANIMATION + HEADER STYLING -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    .service-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service-box h3 {
+      margin-bottom: 15px;
+      color: #007BFF;
+    }
+
+    .service-box p {
+      color: #555;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .service-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-box {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <header style="display:flex; align-items:center; justify-content:space-between; padding:10px 40px;">
 
-<img src="assets/images/logo.png" alt="Kalhiya Builders Logo" style="height:60px;">
-
-<div style="max-width:450px; text-align:right;">
-
-<div style="
-font-size:22px;
-font-weight:bold;
-line-height:1.2;
-color:#333;
-margin-bottom:6px;
-">
-BUILDING <br>
-TOMORROW'S <br>
-SKYLINE
-</div>
-
-<div style="
-font-size:14px;
-color:#555;
-line-height:1.4;
-margin-bottom:8px;
-">
-Kalhiya Builders & Constructions provides quality construction services with trusted workmanship.
-</div>
-
-<a href="tel:+918920121265" style="
-background:#ff6600;
-color:white;
-padding:8px 18px;
-border-radius:5px;
-text-decoration:none;
-font-weight:bold;
-display:inline-block;
-">
-Contact Us
-</a>
-
-</div>
-
-</header>
-    <!-- WHATSAPP -->
-<a class="whatsapp"
-   href="https://wa.me/918920121265?text=Hi%20Kalhiya%20Builders%20%26%20Constructions"
-   target="_blank"
-   aria-label="Chat on WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-
-<!-- INSTAGRAM -->
-<a class="instagram"
-   href="https://www.instagram.com/kalhiya_constructions"
-   target="_blank"
-   aria-label="Follow on Instagram">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-</a>
-<header>
-    <img src="assets/images/logo.png"
-         alt="Kalhiya Builders & Constructions Logo"
-         class="logo">
-
-    <h1 style="color:#0B3D91;">Kalhiya Builders & Constructions</h1>
-
-    <p class="tagline" style="color:#333333;">QUALITY CONSTRUCTION YOU CAN TRUST</p>
-</header>
-<section class="hero" style="position: relative; width: 100%; max-width: 1200px; margin: auto; overflow: hidden;">
-<section class="slider-section">
-  <div class="slider">
-    <div class="slider-container">
-      <img src="assets/images/slide1.jpg" alt="Slide 1">
-      <img src="assets/images/slide2.jpg" alt="Slide 2">
-      <img src="assets/images/slide3.jpg" alt="Slide 3">
-      <img src="assets/images/slide4.jpg" alt="Slide 4">
-      <img src="assets/images/slide5.jpg" alt="Slide 5">
+  <!-- Header (example, you can customize) -->
+  <header>
+    <div class="logo">
+      <h1>Construction Co.</h1>
     </div>
-  </div>
-</section>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<style>
-/* Slider container responsive */
-.slider {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
+  <!-- Our Services Section -->
+  <section class="services" id="services">
 
-.slider-container {
-  display: flex;
-  width: 500%; /* 5 slides */
-  animation: slide 15s infinite;
-}
+    <h2>Our Services</h2>
 
-.slider-container img {
-  width: 20%; /* 100 / 5 slides */
-  height: auto;
-  display: block;
-}
+    <div class="service-grid">
 
-/* Animation */
-@keyframes slide {
-  0% { transform: translateX(0%); }
-  20% { transform: translateX(-20%); }
-  40% { transform: translateX(-40%); }
-  60% { transform: translateX(-60%); }
-  80% { transform: translateX(-80%); }
-  100% { transform: translateX(0%); }
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .slider-container img {
-    width: 100%; /* ek time pe 1 slide dikhe mobile pe */
-  }
-
-  .slider-container {
-    animation: slide 25s infinite;
-  }
-}
-</style>
-
-<!-- ABOUT SECTION -->
-<section class="about">
-
-<h2>About Us</h2>
-
-<p>
-Kalhiya Builders & Constructions is a trusted name in the construction industry,
-delivering quality building solutions with commitment and professionalism.
-We undertake residential and commercial projects with a strong focus on
-durability, safety, and timely completion.
-</p>
-
-<p><strong>Service Areas:</strong> Delhi, Gurugram, Noida, Ghaziabad</p>
-
-</section>
-
-<!-- WORK GALLERY -->
-<section class="work-gallery">
-
-<h2>Our Construction Work</h2>
-
-<img src="assets/images/nfc-stilt-floor-drawing.jpeg" width="300" alt="NFC Stilt Floor Drawing">
-<img src="assets/images/nfc-ground-floor-drawing.jpeg" width="300" alt="NFC Ground Floor Drawing">
-<img src="assets/images/concrete-mixer.jpeg" width="300" alt="Concrete Mixer">
-<img src="assets/images/d1-34-stilt-shuttering.jpeg" width="300" alt="Stilt Shuttering Work">
-<img src="assets/images/d1-35-structure-with-brick-works.jpeg" width="300" alt="Structure with Brick Works">
-
-<section class="services">
-
-  <h2>Our Services</h2>
-
-  <div class="service-grid">
-
-    <div class="service-box">
-      <h3>Building Construction</h3>
-      <button onclick="toggleDetails('buildingDetails')">Show/Hide Details</button>
-      <div id="buildingDetails" style="display:none;">
-        Residential and commercial building construction with high quality materials.
+      <div class="service-box">
+        <h3>Building Construction</h3>
+        <p>Residential and commercial building construction with high quality materials.</p>
       </div>
-    </div>
 
-    <div class="service-box">
-      <h3>Structural Work</h3>
-      <button onclick="toggleDetails('structuralDetails')">Show/Hide Details</button>
-      <div id="structuralDetails" style="display:none;">
-        Strong foundation, shuttering, slab casting and steel structure work.
+      <div class="service-box">
+        <h3>Structural Work</h3>
+        <p>Strong foundation, shuttering, slab casting and steel structure work.</p>
       </div>
-    </div>
 
-    <div class="service-box">
-      <h3>Renovation</h3>
-      <button onclick="toggleDetails('renovationDetails')">Show/Hide Details</button>
-      <div id="renovationDetails" style="display:none;">
-        Complete renovation and remodeling services for homes and offices.
+      <div class="service-box">
+        <h3>Renovation</h3>
+        <p>Complete renovation and remodeling services for homes and offices.</p>
       </div>
-    </div>
 
-    <div class="service-box">
-      <h3>Project Management</h3>
-      <button onclick="toggleDetails('projectDetails')">Show/Hide Details</button>
-      <div id="projectDetails" style="display:none;">
-        End-to-end project planning and construction supervision.
+      <div class="service-box">
+        <h3>Project Management</h3>
+        <p>End-to-end project planning and construction supervision.</p>
       </div>
+
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <!-- Example Projects Section -->
+  <section class="projects" id="projects">
+    <h2 style="text-align:center; margin:40px 0;">Our Projects</h2>
+    <div style="text-align:center; color:#555;">Images or project content goes here.</div>
+  </section>
 
-<!-- Script at the end of body -->
-<script>
-  function toggleDetails(id) {
-    var x = document.getElementById(id);
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-</script>
-
-<h2>Project Videos</h2>
-
-<div class="project-videos">
-
-<video controls>
-<source src="assets/videos/nfc-slab-casting.mp4" type="video/mp4">
-</video>
-
-<video controls>
-<source src="assets/videos/nfc-steel-fitting.mp4" type="video/mp4">
-</video>
-
-<video controls>
-<source src="assets/videos/nfc-shuttering-work.mp4" type="video/mp4">
-</video>
-
-</div>
-</section>
-<section class="reviews">
-    <h2>Client Reviews</h2>
-
-    <div class="review-list" id="reviewList">
-        <!-- Sample Review -->
-        <div class="review-card">
-            <p class="review-text">
-                “Kalhiya Builders ne kaam time par aur bahut achhi quality ke saath complete kiya.”
-            </p>
-            <p class="review-name">— Ramesh Kumar, NFC</p>
-        </div>
-    </div>
-
-    <h3>Submit Your Review</h3>
-
-<form class="review-form" id="reviewForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-
-    <textarea id="review" placeholder="Your Review" required></textarea>
-
-    <!-- ⭐ STAR RATING YAHAN PASTE KARO -->
-    <div class="star-rating">
-        <input type="radio" name="rating" value="5" id="star5"><label for="star5">★</label>
-        <input type="radio" name="rating" value="4" id="star4"><label for="star4">★</label>
-        <input type="radio" name="rating" value="3" id="star3"><label for="star3">★</label>
-        <input type="radio" name="rating" value="2" id="star2"><label for="star2">★</label>
-        <input type="radio" name="rating" value="1" id="star1"><label for="star1">★</label>
-    </div>
-
-    <button type="submit">Submit Review</button>
-</form>
-    <p class="official-instagram">
-    📸 Follow us on Instagram:
-    <a href="https://www.instagram.com/kalhiya_constructions"
-       target="_blank">
-        @kalhiya_constructions
-    </a>
-</p>
-</section>
-
-<section class="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-        <p>
-  📞 <strong>Mobile:</strong>
-  <a href="tel:+918920121265" style="color:inherit; text-decoration:none;">
-    8920121265
-  </a>
-</p>
-        <p>✉️ <strong>Email:</strong> <a href="mailto:kalhiyabuilders@gmail.com" style="color:#1f2937; text-decoration:none;">kalhiyabuilders@gmail.com</a></p>
-        <p>📍 <strong>Office Location:</strong> Kalhiya Builders & Constructions</p>
-    </div>
-
-<!-- Google Map Embed -->
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.4797811352178!2d77.22399637529324!3d28.434950075773273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdf00752a5cd5%3A0xde7a4662ec85a291!2sKalhiya%20Builders%20%26%20Constructions!5e0!3m2!1sen!2sin!4v1768921452036!5m2!1sen!2sin"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-<!-- Directions Button -->
-<p style="margin-top:20px;">
-  <a href="https://www.google.com/maps/dir/?api=1&destination=28.434950075773273,77.22399637529324"
-     target="_blank"
-     style="display:inline-block;background:#1f2937;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold;">
-     📍 Get Directions
-  </a>
-</p>
-</section>
-
-<footer>
-    © 2026 Kalhiya Builders & Constructions. All Rights Reserved.
-</footer>
-
-<a class="whatsapp"
-   href="https://wa.me/918920121265?text=Hi%20Kalhiya%20Builders%20%26%20Constructions,%20I%20would%20like%20to%20enquire%20about%20your%20services."
-   target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-<script>
-  window.onload = function () {
-    if (window.location.hash) {
-      window.scrollTo(0, 0);
-      history.replaceState(null, null, window.location.pathname);
-    }
-  };
-</script>
-<script>
-const reviewForm = document.getElementById("reviewForm");
-
-if (reviewForm) {
-  reviewForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const review = document.getElementById("review").value;
-    const rating = document.querySelector('input[name="rating"]:checked');
-
-    if (!rating) {
-      alert("Please select star rating ⭐");
-      return;
-    }
-
-    const stars = "★".repeat(rating.value);
-
-    const reviewCard = document.createElement("div");
-    reviewCard.classList.add("review-card");
-
-    reviewCard.innerHTML = `
-      <div class="review-stars">${stars}</div>
-      <p class="review-text">“${review}”</p>
-      <p class="review-name">— ${name}</p>
-    `;
-
-    document.getElementById("reviewList").appendChild(reviewCard);
-    this.reset();
-  });
-}
-</script>
-    <script>
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
-</script>
+  <!-- Footer -->
+  <footer style="text-align:center; padding:30px; background:#333; color:#fff;">
+    &copy; 2026 Construction Company. All rights reserved.
+  </footer>
 
 </body>
 </html>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
