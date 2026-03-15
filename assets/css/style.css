@@ -823,3 +823,14 @@ object-fit:cover;
     height: auto;
   }
 }
+.slider {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
