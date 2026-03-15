@@ -755,3 +755,13 @@ transition:0.3s;
 .work-gallery img:hover{
 transform:scale(1.05);
 }
+.hero-text {
+  position: absolute;
+  right: 40px;   /* text ko right side mein le jayega */
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
