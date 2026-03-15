@@ -817,3 +817,9 @@ object-fit:cover;
 71%{margin-left:-200%;}
 100%{margin-left:-200%;}
 }
+@media (max-width: 768px) {
+  .slider-container img {
+    width: 100%;
+    height: auto;
+  }
+}
