@@ -89,18 +89,59 @@ Contact Us
     <p class="tagline" style="color:#333333;">QUALITY CONSTRUCTION YOU CAN TRUST</p>
 </header>
 <section class="hero" style="position: relative; width: 100%; max-width: 1200px; margin: auto; overflow: hidden;">
-
-<div class="slider">
-
-  <div class="slider-container">
-  <img src="assets/images/slider1.jpg" alt="Slide 1">
-  <img src="assets/images/slider2.jpg" alt="Slide 2">
-  <img src="assets/images/slider3.jpg" alt="Slide 3">
-      <img src="assets/images/slider4.jpg" alt="Slide 4">
-      <img src="assets/images/slider5.jpg" alt="Slide 5">
-</div>
-</div>
+<section class="slider-section">
+  <div class="slider">
+    <div class="slider-container">
+      <img src="assets/images/slide1.jpg" alt="Slide 1">
+      <img src="assets/images/slide2.jpg" alt="Slide 2">
+      <img src="assets/images/slide3.jpg" alt="Slide 3">
+      <img src="assets/images/slide4.jpg" alt="Slide 4">
+      <img src="assets/images/slide5.jpg" alt="Slide 5">
+    </div>
+  </div>
 </section>
+
+<style>
+/* Slider container responsive */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  width: 500%; /* 5 slides */
+  animation: slide 15s infinite;
+}
+
+.slider-container img {
+  width: 20%; /* 100 / 5 slides */
+  height: auto;
+  display: block;
+}
+
+/* Animation */
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(-20%); }
+  40% { transform: translateX(-40%); }
+  60% { transform: translateX(-60%); }
+  80% { transform: translateX(-80%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .slider-container img {
+    width: 100%; /* ek time pe 1 slide dikhe mobile pe */
+  }
+
+  .slider-container {
+    animation: slide 25s infinite;
+  }
+}
+</style>
 
 <!-- ABOUT SECTION -->
 <section class="about">
