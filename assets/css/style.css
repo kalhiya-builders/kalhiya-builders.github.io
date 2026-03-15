@@ -871,3 +871,13 @@ object-fit:cover;
 .hero-btn:hover {
   background: #e65c00;
 }
+.slider{
+  width:100%;
+  max-width:1000px;
+  margin:20px auto;
+}
+
+.slide{
+  width:100%;
+  display:none;
+}
