@@ -739,3 +739,19 @@ height:26px;
 .whatsapp:hover{
 transform:scale(1.08);
 }
+.work-gallery{
+text-align:center;
+padding:60px 20px;
+}
+
+.work-gallery img{
+width:280px;
+margin:12px;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.work-gallery img:hover{
+transform:scale(1.05);
+}
