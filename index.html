@@ -46,34 +46,33 @@
 <p class="tagline">QUALITY CONSTRUCTION YOU CAN TRUST</p>
 
 <div class="slider">
-    <img class="slide" src="assets/images/slide1.jpeg">
-    <img class="slide" src="assets/images/slide2.jpeg">
-    <img class="slide" src="assets/images/slide3.jpeg">
-    <img class="slide" src="assets/images/slide4.jpeg">
-    <img class="slide" src="assets/images/slide5.jpeg">
+  <img class="slide" src="assets/images/slide1.jpeg">
+  <img class="slide" src="assets/images/slide2.jpeg">
+  <img class="slide" src="assets/images/slide3.jpeg">
+  <img class="slide" src="assets/images/slide4.jpeg">
+  <img class="slide" src="assets/images/slide5.jpeg">
 </div>
 
 <p class="hero-text">Trusted Construction Services by Kalhiya Builders.</p>
-
 <a href="tel:+918920121265" class="hero-btn">Contact Us</a>
-
 </header>
 
 <script>
-let index = 0;
-const slides = document.querySelectorAll(".slide");
+document.addEventListener("DOMContentLoaded", function () {
+  let index = 0;
+  let slides = document.querySelectorAll(".slide");
 
-function showSlide() {
-  slides.forEach((slide, i) => {
-    slide.style.display = (i === index) ? "block" : "none";
-  });
-  index = (index + 1) % slides.length;
-}
+  function showSlide(){
+    slides.forEach((img)=> img.style.display="none");
+    slides[index].style.display="block";
+    index++;
+    if(index >= slides.length){ index = 0; }
+  }
 
-showSlide();
-setInterval(showSlide, 3000);
+  showSlide();
+  setInterval(showSlide,3000);
+});
 </script>
-
 <h2 class="projects-title">Our Recent Projects</h2>
 
 <div class="project-gallery">
