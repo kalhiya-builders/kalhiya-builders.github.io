@@ -75,13 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
 <h2 class="projects-title">Our Recent Projects</h2>
 
 <div class="project-gallery">
-  <img src="assets/images/nfc-stilt-floor-drawing.jpeg">
-  <img src="assets/images/nfc-ground-floor-drawing.jpeg">  
-  <img src="assets/images/concrete-mixer.jpeg">
-  <img src="assets/images/d1-34-stilt-shuttering.jpeg">
-  <img src="assets/images/d1-35-structure-with-brick-works.jpeg">
-  <img src="assets/images/d1-35-column-casting.png">
-  <img src="assets/images/d1-35-column-levelling.png">  
+  <img src="assets/images/nfc-stilt-floor-drawing.jpeg" onclick="openImage(this)">
+  <img src="assets/images/nfc-ground-floor-drawing.jpeg" onclick="openImage(this)">
+  <img src="assets/images/concrete-mixer.jpeg" onclick="openImage(this)">
+  <img src="assets/images/d1-34-stilt-shuttering.jpeg" onclick="openImage(this)">
+  <img src="assets/images/d1-35-structure-with-brick-works.jpeg" onclick="openImage(this)">
+  <img src="assets/images/d1-35-column-casting.png" onclick="openImage(this)">
+  <img src="assets/images/d1-35-column-levelling.png" onclick="openImage(this)">
+</div>
+
+<div id="imagePopup" class="image-popup">
+  <span class="close-btn" onclick="closeImage()">✕</span>
+  <img id="popupImg">
 </div>
 <section class="about">
     <h2>About Us</h2>
