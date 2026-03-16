@@ -84,10 +84,22 @@ document.addEventListener("DOMContentLoaded", function () {
   <img src="assets/images/d1-35-column-levelling.png" onclick="openImage(this)">
 </div>
 
+<!-- Image Popup -->
 <div id="imagePopup" class="image-popup">
-  <span class="close-btn" onclick="closeImage()">✕</span>
-  <img id="popupImg">
+<span class="close-btn" onclick="closeImage()">✕</span>
+<img id="popupImg">
 </div>
+
+<script>
+function openImage(img){
+document.getElementById("imagePopup").style.display="flex";
+document.getElementById("popupImg").src=img.src;
+}
+
+function closeImage(){
+document.getElementById("imagePopup").style.display="none";
+}
+</script>
 <section class="about">
     <h2>About Us</h2>
     <p>
