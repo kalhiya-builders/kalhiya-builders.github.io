@@ -881,3 +881,9 @@ object-fit:cover;
   width:100%;
   display:none;
 }
+.service-box img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 6px;
+}
