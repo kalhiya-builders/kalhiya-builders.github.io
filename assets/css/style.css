@@ -881,13 +881,13 @@ object-fit:cover;
   width:100%;
   display:none;
 }
-.project-grid{
+.project-gallery{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
 }
 
-.project-grid img{
+.project-gallery img{
 width:100%;
 aspect-ratio:9/16;
 object-fit:cover;
