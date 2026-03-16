@@ -202,88 +202,118 @@ document.getElementById("imagePopup").style.display="none";
 
 <section class="contact">
     <h2>Contact Us</h2>
+
     <div class="contact-info">
+
         <p>
-  📞 <strong>Mobile:</strong>
-  <a href="tel:+918920121265" style="color:inherit; text-decoration:none;">
-    8920121265
-  </a>
-</p>
-        <p>✉️ <strong>Email:</strong> <a href="mailto:kalhiyabuilders@gmail.com" style="color:#1f2937; text-decoration:none;">kalhiyabuilders@gmail.com</a></p>
-        <p>📍 <strong>Office Location:</strong> Kalhiya Builders & Constructions</p>
+        📞 <strong>Mobile:</strong>
+        <a href="tel:+918920121265" style="color:inherit; text-decoration:none;">
+        8920121265
+        </a>
+        </p>
+
+        <p>
+        ✉️ <strong>Email:</strong>
+        <a href="mailto:kalhiyabuilders@gmail.com" style="color:#1f2937; text-decoration:none;">
+        kalhiyabuilders@gmail.com
+        </a>
+        </p>
+
+        <p>
+        📍 <strong>Office Location:</strong> Kalhiya Builders & Constructions
+        </p>
+
     </div>
 
-<!-- Google Map Embed -->
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.4797811352178!2d77.22399637529324!3d28.434950075773273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdf00752a5cd5%3A0xde7a4662ec85a291!2sKalhiya%20Builders%20%26%20Constructions!5e0!3m2!1sen!2sin!4v1768921452036!5m2!1sen!2sin"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
+
+<!-- Google Map -->
+<iframe
+src="https://www.google.com/maps?q=28.434950075773273,77.22399637529324&z=15&output=embed"
+width="100%"
+height="400"
+style="border:0;border-radius:10px;margin-top:20px;"
+allowfullscreen=""
+loading="lazy">
 </iframe>
+
 
 <!-- Directions Button -->
 <p style="margin-top:20px;">
-  <a href="https://www.google.com/maps/dir/?api=1&destination=28.434950075773273,77.22399637529324"
-     target="_blank"
-     style="display:inline-block;background:#1f2937;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold;">
-     📍 Get Directions
-  </a>
+<a href="https://www.google.com/maps/dir/?api=1&destination=28.434950075773273,77.22399637529324"
+target="_blank"
+style="display:inline-block;background:#1f2937;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold;">
+📍 Get Directions
+</a>
 </p>
+
 </section>
 
+
 <footer>
-    © 2026 Kalhiya Builders & Constructions. All Rights Reserved.
+© 2026 Kalhiya Builders & Constructions. All Rights Reserved.
 </footer>
 
+
 <a class="whatsapp"
-   href="https://wa.me/918920121265?text=Hi%20Kalhiya%20Builders%20%26%20Constructions,%20I%20would%20like%20to%20enquire%20about%20your%20services."
-   target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+href="https://wa.me/918920121265?text=Hi%20Kalhiya%20Builders%20%26%20Constructions,%20I%20would%20like%20to%20enquire%20about%20your%20services."
+target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
+
+
 <script>
-  window.onload = function () {
-    if (window.location.hash) {
-      window.scrollTo(0, 0);
-      history.replaceState(null, null, window.location.pathname);
-    }
-  };
+window.onload = function () {
+if (window.location.hash) {
+window.scrollTo(0, 0);
+history.replaceState(null, null, window.location.pathname);
+}
+};
 </script>
+
+
 <script>
 const reviewForm = document.getElementById("reviewForm");
 
 if (reviewForm) {
-  reviewForm.addEventListener("submit", function(e) {
-    e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const review = document.getElementById("review").value;
-    const rating = document.querySelector('input[name="rating"]:checked');
+reviewForm.addEventListener("submit", function(e) {
 
-    if (!rating) {
-      alert("Please select star rating ⭐");
-      return;
-    }
+e.preventDefault();
 
-    const stars = "★".repeat(rating.value);
+const name = document.getElementById("name").value;
+const review = document.getElementById("review").value;
+const rating = document.querySelector('input[name="rating"]:checked');
 
-    const reviewCard = document.createElement("div");
-    reviewCard.classList.add("review-card");
+if (!rating) {
+alert("Please select star rating ⭐");
+return;
+}
 
-    reviewCard.innerHTML = `
-      <div class="review-stars">${stars}</div>
-      <p class="review-text">“${review}”</p>
-      <p class="review-name">— ${name}</p>
-    `;
+const stars = "★".repeat(rating.value);
 
-    document.getElementById("reviewList").appendChild(reviewCard);
-    this.reset();
-  });
+const reviewCard = document.createElement("div");
+reviewCard.classList.add("review-card");
+
+reviewCard.innerHTML = `
+<div class="review-stars">${stars}</div>
+<p class="review-text">“${review}”</p>
+<p class="review-name">— ${name}</p>
+`;
+
+document.getElementById("reviewList").appendChild(reviewCard);
+
+this.reset();
+
+});
+
 }
 </script>
-    <script>
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
+
+
+<script>
+window.onbeforeunload = function () {
+window.scrollTo(0, 0);
+};
 </script>
 
 </body>
