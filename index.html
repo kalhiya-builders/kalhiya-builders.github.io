@@ -39,42 +39,85 @@ section {padding:50px 20px;text-align:center;}
 <a href="https://wa.me/918920121265" class="btn btn-quote">💬 Get Free Quote</a>
 </div>
 
+<!-- ✅ Services Section -->
 <section>
 <h2>Our Services</h2>
 <div class="services">
-<div class="card">Building Construction</div>
-<div class="card">House Renovation</div>
-<div class="card">Interior Work</div>
-<div class="card">Civil Work</div>
+  <div class="card">Building Construction</div>
+  <div class="card">House Renovation</div>
+  <div class="card">Interior Work</div>
+  <div class="card">Civil Work</div>
 </div>
 </section>
 
+<!-- ✅ Projects Section -->
 <section>
 <h2>Our Projects</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-<img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0">
-<img src="https://images.unsplash.com/photo-1599423300746-b62533397364">
+<p>Our recent construction projects</p>
+
+<div class="project-gallery">
+  <img src="assets/images/nfc-stilt-floor-drawing.jpeg" onclick="openImage(this)" alt="Stilt Floor Drawing">
+  <img src="assets/images/nfc-ground-floor-drawing.jpeg" onclick="openImage(this)" alt="Ground Floor Drawing">
+  <img src="assets/images/concrete-mixer.jpeg" onclick="openImage(this)" alt="Concrete Mixer">
+  <img src="assets/images/d1-34-stilt-shuttering.jpeg" onclick="openImage(this)" alt="Shuttering Work">
+  <img src="assets/images/d1-35-structure-with-brick-works.jpeg" onclick="openImage(this)" alt="Brick Work Structure">
+  <img src="assets/images/d1-35-column-casting.png" onclick="openImage(this)" alt="Column Casting">
+  <img src="assets/images/d1-35-column-levelling.png" onclick="openImage(this)" alt="Column Levelling">
 </div>
 </section>
 
-<section>
-<h2>Why Choose Us</h2>
-<p>✔ 5+ Years Experience</p>
-<p>✔ Quality Work</p>
-<p>✔ On Time Delivery</p>
-</section>
+<!-- Image Popup -->
+<div id="imagePopup" class="image-popup">
+<span class="close-btn" onclick="closeImage()">✕</span>
+<img id="popupImg">
+</div>
+
+<script>
+function openImage(img){
+  document.getElementById("imagePopup").style.display="flex";
+  document.getElementById("popupImg").src=img.src;
+}
+
+function closeImage(){
+  document.getElementById("imagePopup").style.display="none";
+}
+</script>
 
 <section>
-<h2>Contact Us</h2>
+<h2 style="margin-bottom:20px;">Why Choose Us</h2>
+
+<div class="services">
+  <div class="card">5+ Years Experience</div>
+  <div class="card">Quality Work</div>
+  <div class="card">On Time Delivery</div>
+</div>
+
+</section>
+<section style="text-align:center;">
+<h2 style="margin-bottom:10px;">Contact Us</h2>
+
 <p>📍 Kalhiya Builders & Constructions</p>
 <p>📞 +91 8920121265</p>
+
+<div style="margin-top:15px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+  <a href="tel:+918920121265" class="btn btn-call">📞 Call Now</a>
+  <a href="https://wa.me/918920121265" class="btn btn-quote">💬 WhatsApp</a>
+</div>
+
+<div style="margin-top:30px;">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.488312568952!2d77.22416887528139!3d28.434692775773257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x66770a30133e3a1d%3A0x7769ec0195aae9bd!2sKalhiya%20Builders%20%26%20Constructions!5e0!3m2!1sen!2sin!4v1774015453743!5m2!1sen!2sin"
+    width="100%"
+    height="300"
+    style="border:0; border-radius:10px;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+
 </section>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/918920121265" class="whatsapp">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-</a>
-
-</body>
-</html>
+<footer style="background:#111;color:#fff;text-align:center;padding:20px;">
+<p>© 2026 Kalhiya Builders & Constructions</p>
+<p>All Rights Reserved</p>
+<p style="font-size:14px;color:#ccc;">Delhi | Gurugram | Noida | Ghaziabad</p>
+</footer>
