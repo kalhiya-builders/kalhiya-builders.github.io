@@ -43,20 +43,43 @@ font-weight:600;
 
 /* BUTTON */
 
-.hero-btn{
+.btn-primary,
+.btn-secondary{
+
 display:inline-block;
-margin-top:25px;
-padding:14px 30px;
-background:#2563eb;
-color:white;
-text-decoration:none;
-border-radius:12px;
+padding:15px 34px;
+border-radius:8px;
 font-weight:700;
+text-decoration:none;
+margin:8px;
 transition:.3s;
+
 }
 
-.hero-btn:hover{
-background:#1d4ed8;
+.btn-primary{
+
+background:#ff6b00;
+color:white;
+
+}
+
+.btn-primary:hover{
+
+background:#e65c00;
+
+}
+
+.btn-secondary{
+
+background:#25D366;
+color:white;
+
+}
+
+.btn-secondary:hover{
+
+background:#1ebd5a;
+
 }
 
 /* SLIDER */
@@ -383,22 +406,18 @@ height:250px;
 /* ===== PREMIUM HERO ===== */
 
 .hero{
-
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("assets/images/slide1.jpg");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/slide1.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
 }
-
 /* =========================
    PREMIUM NAVBAR
 ========================= */
@@ -489,23 +508,18 @@ color:white;
 }
 
 .hero-content h1{
-
-font-size:60px;
-
-margin-bottom:20px;
-
-font-weight:900;
-
+    font-size:64px;
+    font-weight:900;
+    line-height:1.1;
+    margin-bottom:18px;
+    text-transform:uppercase;
 }
 
 .hero-content p{
-
-font-size:24px;
-
-margin-bottom:35px;
-
+    font-size:22px;
+    margin-bottom:35px;
+    color:#f3f4f6;
 }
-
 .hero-buttons{
 
 display:flex;
